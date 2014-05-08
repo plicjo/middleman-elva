@@ -13,7 +13,7 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 
 ###Features###
 * Bootstrap 3, HAML, SASS
-* Stellar Site Optimization (Image compression, Gzip compression for Apache servers, asset hashes, etc.)
+* Stellar Site Optimization (Image compression, gzip compression, asset hashes, etc.)
 * Effective Javascript and CSS Templates (effects.js and all.css.scss)
 * Favicon and Apple Touch Icon Generator
 * 404 Error Page
