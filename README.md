@@ -1,12 +1,12 @@
-# Middleman Template with Bootstrap, Site Optimization, and Zen Development
+# Middleman Template for Site Optimization and Zen Development
 
 The Middleman template built for site optimization and development speed.
 
-**middleman-elva** is a [Middleman 3.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/) [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
+**middleman-elva** is a [Middleman 3.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
 
 ###Introduction###
 
-Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (myself and [@johnapost](https://github.com/johnapost) ) decided to release our project boilerplate because we just honestly think it's awesome! It reduces our project start-up time by a ridiculous amount of time. It's built for site optimization and development speed. Enjoy!
+Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (myself and [@johnapost](https://github.com/johnapost)) decided to release our project boilerplate because we just honestly think it's awesome! It reduces our project start-up time by a ridiculous amount of time. It's built for site optimization and development speed. Enjoy!
 
 * **Version**: 0.1
 * **Contributors**: [@plicjo](https://github.com/plicjo), [@johnapost](https://github.com/johnapost)
@@ -18,9 +18,9 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 * Favicon and Apple Touch Icon Generator
 * 404 Error Page
 
-### Installation 1-2-3 ###
+### Installation###
 
-1. Install Image Optimization Dependencies/Binaries.
+1. Install Image Optimization ([imageoptim](https://github.com/toy/image_optim)) Dependencies.
    * Linux: Debian/Ubuntu - `sudo apt-get install -y advancecomp gifsicle jhead jpegoptim libjpeg-progs optipng pngcrush`
    * Linux: RHEL/Fedora/Centos - `sudo yum install -y advancecomp gifsicle jhead libjpeg optipng`
    * OS X: Macports - `sudo port install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush`
@@ -29,20 +29,15 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
  
 2. Clone **middleman-elva** into `~/.middleman`.
 	* ```$ git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva```
-	* If `~/.middleman` doesn't exist, do these commands:
-		* `$ cd ~`
-		* `$ mkdir .middleman`
-		* ```$ git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva```
-3. Bundle everything up!
-	* `$ bundle install`
 
 ### Usage ###
 
 1. Head over to your project
 	* `cd new_project_path`
 2. Initialize middleman with middleman-elva
-	 * `$ middleman init --template=middleman-elva`
-3. ???
+	* `$ middleman init --template=middleman-elva`
+3. Bundle everything up!
+	* `$ bundle install`
 4. Profit.
 
 
