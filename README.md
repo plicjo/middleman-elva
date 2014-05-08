@@ -17,6 +17,7 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 * Effective Javascript and CSS Templates (effects.js and all.css.scss)
 * Favicon and Apple Touch Icon Generator
 * 404 Error Page
+* Include .ruby-gemset and .ruby-version for [RVM](http://rvm.io/rvm/install)
 
 ### Installation###
 
