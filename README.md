@@ -1,50 +1,75 @@
-# Middleman Template with Haml, Sass & Coffeescript
+# Middleman Template with Bootstrap, Site Optimization, and Zen Development
 
-**middleman-hamlsasscoffee** is a [Middleman 3.x](http://middlemanapp.com/) project template with [Compass](http://compass-style.org)/[SASS](http://sass-lang.com/), [HAML](http://haml-lang.com/) and [Coffeescript](http://coffeescript.org). As with all Middleman templates, using [Bundler](http://gembundler.com/) and [Rbenv](https://github.com/sstephenson/rbenv/) is recommended.
+The Middleman template built for site optimization and development speed.
+
+**middleman-elva** is a [Middleman 3.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/) [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
+
+###Introduction###
+
+Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (myself and [@johnapost](https://github.com/johnapost) ) decided to release our project boilerplate because we just honestly think it's awesome! It reduces our project start-up time by a ridiculous amount of time. It's built for site optimization and development speed. Enjoy!
+
+* **Version**: 0.1
+* **Contributors**: [@plicjo](https://github.com/plicjo), [@johnapost](https://github.com/johnapost)
 
 ###Features###
-* Optimized asset structure
-* Conditional IE html tags
-* Viewport meta setup for iOS and Android
-* Favicon and app icons
-* Dynamic title attribute body class via YAML front-matter
+* Bootstrap 3, HAML, SASS
+* Stellar Site Optimization (Image compression, Gzip compression for Apache servers, asset hashes, etc.)
+* Effective Javascript and CSS Templates (effects.js and all.css.scss)
+* Favicon and Apple Touch Icon Generator
+* 404 Error Page
 
-###Includes###
-* Modernizr 2.6.2 via cdnjs.com
-* jQuery 2.0.3 via cdnjs.com
-* Google Analytics (async)
+### Installation 1-2-3 ###
 
-### Installation ###
+1. Install Image Optimization Dependencies/Binaries.
+   * Linux: Debian/Ubuntu - `sudo apt-get install -y advancecomp gifsicle jhead jpegoptim libjpeg-progs optipng pngcrush`
+   * Linux: RHEL/Fedora/Centos - `sudo yum install -y advancecomp gifsicle jhead libjpeg optipng`
+   * OS X: Macports - `sudo port install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush`
+   * OS X: Brew - `brew install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush`
+   * You might run into issues with 1-2 optimizers. Check out the [imageoptim](https://github.com/toy/image_optim) binary section.
  
-Clone **middleman-hamlsasscoffee** into `~/.middleman`. You will need to create this directory if it doesn't exist.
-```$ git clone git://github.com/pixelsonly/middleman-hamlsasscoffee.git ~/.middleman/middleman-hamlsasscoffee```
+2. Clone **middleman-elva** into `~/.middleman`.
+	* ```$ git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva```
+	* If `~/.middleman` doesn't exist, do these commands:
+		* `$ cd ~`
+		* `$ mkdir .middleman`
+		* ```$ git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva```
+3. Bundle everything up!
+	* `$ bundle install`
 
-Initialize middleman on a new or existing folder `$ middleman init path_to_project --template=middleman-hamlsasscoffee`
+### Usage ###
+
+1. Head over to your project
+	* `cd new_project_path`
+2. Initialize middleman with middleman-elva
+	 * `$ middleman init --template=middleman-elva`
+3. ???
+4. Profit.
 
 
-For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/) or feel free to hit me up on [Twitter](http://twitter.com/pixelsonly).
+For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
 
 ---
 
 ##### LICENSE #####
 
-Copyright (c) 2013 Ryan Lindsey
+The MIT License (MIT)
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+Copyright (c) 2014 Joshua Plicque
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

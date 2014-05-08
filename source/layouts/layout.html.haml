@@ -1,49 +1,29 @@
-!!! 5
-/[if lt IE 7]   <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us">
-/[if IE 7]      <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us">
-/[if IE 8]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
-/[if IE 9]      <html class="no-js lt-ie10 lt-ie9" lang="en-us">
-/[if lt IE 10]  <html class="no-js lt-ie10" lang="en-us">
-/[if !IE]>
-%html{lang: 'en', class: 'no-js'}
-  /<![endif]
+!!!
+%html
   %head
-    %title #{data.page.title || "The Middleman"}
-    %meta(http-equiv="content-type" content="text/html" charset="utf-8")
-    %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
-    %meta(name="description" content="")
-    %meta(name="author" content="")
-    
-    -# Standard viewport tag to set the viewport to the device's width, 
-    -# Android 2.3 devices need this so 100% width works properly and 
-    -# doesn't allow children to blow up the viewport width
-    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
-    
-    -# Fix for iPhone 5 fullscreen web apps
-    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
-    %meta(name='apple-mobile-web-app-capable' content='yes')
-    %meta(name='apple-mobile-web-app-status-bar-style' content='translucent-black')
-
-    -# App Icons
-    %link(rel="shortcut icon" href="/images/favicon.ico")
-    %link(rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png")
-    %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png")
-    
-    -# Stylesheets
-    = stylesheet_link_tag 'application'
-  %body{class: current_page.data.body_class || 'page'}
+    %meta{charset: "utf-8"}
+    / JQuery
+    %script{src: "https://code.jquery.com/jquery.min.js"} 
+    / Bootstrap 
+    %link{rel: "stylesheet", href: "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"}
+    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"}
+    / Website Styles
+    %link{rel: "stylesheet", href: "../stylesheets/normalize.css"}
+    %link{rel: "stylesheet", href: "../stylesheets/all.css"}
+    / IE Compatibility
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    / Mobile Viewport Setting
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    / HTML5 Support for browsers without it
+    / [if lt IE 9]
+      %script{src:"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
+      %script{src:"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+    / JS
+    %script{src:"../javascripts/all.js"}
+    / Favicons
+    %link{ rel: "apple-touch-icon", href: "apple-touch-icon-precomposed.png" }
+    %link{ rel: "shortcut icon", href: "favicon.png" }
+    %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
+  %body    
+    /= partial "layouts/nav"
     = yield
-    -# Javascripts
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
-    = javascript_include_tag 'application'
-
-    - if build?
-      -# Google Analytics
-      :javascript
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
