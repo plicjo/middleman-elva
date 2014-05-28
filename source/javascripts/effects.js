@@ -34,7 +34,7 @@ by: John Apostol
     idm.sizeContent();
   });
 
-  $(window).on("resize", function(){
+  $(window).on("resize orientationchange", function(){
     idm.getWindowSize();
     idm.sizeContent();
   });
