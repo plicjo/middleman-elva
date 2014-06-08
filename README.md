@@ -33,13 +33,11 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 
 ### Usage ###
 
-1. Head over to your project
+1. Head over to the folder where you want your project to be
 	* `cd new_project_path`
 2. Initialize middleman with middleman-elva
-	* `$ middleman init --template=middleman-elva`
-3. Bundle everything up!
-	* `$ bundle install`
-4. Profit.
+	* `$ middleman init project_name --template=middleman-elva`
+3. Profit.
 
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
