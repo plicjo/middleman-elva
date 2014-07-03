@@ -1,7 +1,9 @@
 !!!
 %html
   %head
-    %meta{charset: "utf-8"}
+    %meta{'http-equiv' => 'Content-Type', content: 'text/html; charset=utf-8'}
+    / Mobile Viewport Setting
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     / JQuery
     %script{src: "https://code.jquery.com/jquery.min.js"} 
     / Bootstrap 
@@ -9,11 +11,7 @@
     %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"}
     / Website Styles
     %link{rel: "stylesheet", href: "../stylesheets/normalize.css"}
-    %link{rel: "stylesheet", href: "../stylesheets/all.css"}
-    / IE Compatibility
-    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
-    / Mobile Viewport Setting
-    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %link{rel: "stylesheet", href: "../stylesheets/all.css"}    
     / HTML5 Support for browsers without it
     / [if lt IE 9]
       %script{src:"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
