@@ -63,7 +63,7 @@ configure :build do
   # Minify Javascript on build
    activate :minify_javascript
 
-  # Enable cache buster [Disable this if this will be migrated to Wordpress]
+  # Enable cache buster [Disable this if this will be migrated to Wordpress/non-static]
    activate :asset_hash
 
   # Use relative URLs
@@ -85,7 +85,7 @@ configure :build do
    activate :imageoptim
 
   # Gzip Compression
-   activate :gzip
+   # activate :gzip
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
