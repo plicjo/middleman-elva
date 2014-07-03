@@ -39,6 +39,10 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 	* `$ middleman init project_name --template=middleman-elva`
 3. Profit.
 
+### Need Help ###
+
+Been having issues with gzip compression for static sites. Send a pull request!
+
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
 
