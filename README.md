@@ -2,7 +2,7 @@
 
 The Middleman template built for site optimization and development speed.
 
-**middleman-elva** is a [Middleman 3.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
+**middleman-elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
 
 ###Introduction###
 
@@ -17,32 +17,14 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 * Effective Javascript and CSS Templates (effects.js and all.css.scss)
 * Favicon and Apple Touch Icon Generator
 * 404 Error Page
-* Include .ruby-gemset and .ruby-version for [RVM](http://rvm.io/rvm/install)
-
-### Installation###
-
-1. Install Image Optimization ([imageoptim](https://github.com/toy/image_optim)) Dependencies.
-   * Linux: Debian/Ubuntu - `sudo apt-get install -y advancecomp gifsicle jhead jpegoptim libjpeg-progs optipng pngcrush`
-   * Linux: RHEL/Fedora/Centos - `sudo yum install -y advancecomp gifsicle jhead libjpeg optipng`
-   * OS X: Macports - `sudo port install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush`
-   * OS X: Brew - `brew install advancecomp gifsicle jhead jpegoptim jpeg optipng pngcrush`
-   * You might run into issues with 1-2 optimizers. Check out the [imageoptim](https://github.com/toy/image_optim) binary section.
- 
-2. Clone **middleman-elva** into `~/.middleman`.
-	* ```$ git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva```
 
 ### Usage ###
 
 1. Head over to the folder where you want your project to be
-	* `cd new_project_path`
+  * `cd new_project_path`
 2. Initialize middleman with middleman-elva
-	* `$ middleman init project_name --template=middleman-elva`
+  * `$ middleman init project_name --template=plicjo/middleman-elva`
 3. Profit.
-
-### Need Help ###
-
-Been having issues with gzip compression for static sites. Send a pull request!
-
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
 
@@ -52,7 +34,7 @@ For more help follow [Middleman's project template instructions](http://middlema
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Joshua Plicque
+Copyright (c) 2016 Joshua Plicque
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
