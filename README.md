@@ -1,22 +1,12 @@
-# Middleman Template for Site Optimization and Zen Development
+# Middleman Template for Rapid HTML/CSS templating
 
-The Middleman template built for site optimization and development speed.
+The Middleman template built for development speed.
 
 **middleman-elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 4](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
 
-###Introduction###
-
-Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (myself and [@johnapost](https://github.com/johnapost)) decided to release our project boilerplate because we just honestly think it's awesome! It reduces our project start-up time by a ridiculous amount of time. It's built for site optimization and development speed. Enjoy!
-
-* **Version**: 0.1
-* **Contributors**: [@plicjo](https://github.com/plicjo), [@johnapost](https://github.com/johnapost)
-
 ###Features###
 * Bootstrap 4, HAML, SASS
-* Stellar Site Optimization (Image compression, gzip compression, asset hashes, etc.)
-* Effective Javascript and CSS Templates (effects.js and all.css.scss)
 * Favicon and Apple Touch Icon Generator
-* 404 Error Page
 
 ### Usage ###
 
