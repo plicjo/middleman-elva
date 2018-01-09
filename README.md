@@ -2,18 +2,23 @@
 
 The Middleman template built for development speed.
 
-**middleman-elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 4](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
+**Middleman-Elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 4](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
 
-###Features###
+### Features ###
 * Bootstrap 4, HAML, SASS
 * Favicon and Apple Touch Icon Generator
 
 ### Usage ###
 
-1. Head over to the folder where you want your project to be
-  * `cd new_project_path`
+1. Install `middleman-elva`.
+```
+git clone https://github.com/plicjo/middleman-elva.git ~/.middleman/middleman-elva
+```
+
 2. Initialize middleman with middleman-elva
-  * `$ middleman init project_name --template=plicjo/middleman-elva`
+```
+middleman init MY_PROJECT_FOLDER -T plicjo/middleman-elva
+```
 3. Profit.
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
