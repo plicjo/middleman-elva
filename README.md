@@ -2,7 +2,7 @@
 
 The Middleman template built for site optimization and development speed.
 
-**middleman-elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 3](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
+**middleman-elva** is a [Middleman 4.x](http://middlemanapp.com/) project template with [Bootstrap 4](http://getbootstrap.com/), [HAML](http://haml-lang.com/), [SASS](http://sass-lang.com/) (speedy development), and numerous site optimizations.
 
 ###Introduction###
 
@@ -12,7 +12,7 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 * **Contributors**: [@plicjo](https://github.com/plicjo), [@johnapost](https://github.com/johnapost)
 
 ###Features###
-* Bootstrap 3, HAML, SASS
+* Bootstrap 4, HAML, SASS
 * Stellar Site Optimization (Image compression, gzip compression, asset hashes, etc.)
 * Effective Javascript and CSS Templates (effects.js and all.css.scss)
 * Favicon and Apple Touch Icon Generator
@@ -27,8 +27,6 @@ Hey guys, the developers at [Elva Marketing](http://www.elvamarketing.com/) (mys
 3. Profit.
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/)
-
----
 
 ##### LICENSE #####
 

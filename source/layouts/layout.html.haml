@@ -4,24 +4,25 @@
     %meta{'http-equiv' => 'Content-Type', content: 'text/html; charset=utf-8'}
     / Mobile Viewport Setting
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
-    / JQuery
-    %script{src: "https://code.jquery.com/jquery.min.js"} 
-    / Bootstrap 
-    %link{rel: "stylesheet", href: "//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"}
-    %script{src: "//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"}
+
+    / Bootstrap
+    %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css", integrity: "sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy", crossorigin: 'anonymous' }
+    %script{crossorigin: "anonymous", integrity: "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", src: "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{crossorigin: "anonymous", integrity: "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", src: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
+    %script{crossorigin: "anonymous", integrity: "sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4", src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"}
+
     / Website Styles
     %link{rel: "stylesheet", href: "/stylesheets/normalize.css"}
-    %link{rel: "stylesheet", href: "/stylesheets/all.css"}    
-    / HTML5 Support for browsers without it
-    / [if lt IE 9]
-      %script{src:"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
-      %script{src:"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+    %link{rel: "stylesheet", href: "/stylesheets/all.css"}
+
     / JS
     %script{src:"/javascripts/all.js"}
+
     / Favicons
     %link{ rel: "apple-touch-icon", href: "apple-touch-icon-precomposed.png" }
     %link{ rel: "shortcut icon", href: "favicon.png" }
     %link{ rel: "icon", type: "image/ico", href: "favicon.ico" }
-  %body    
+
+  %body
     /= partial "layouts/nav"
     = yield
